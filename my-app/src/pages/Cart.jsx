@@ -32,8 +32,7 @@ export default function Cart() {
         quantity,
         imageUrl,
       })
-      .then((data) => {
-        console.log(data);
+      .then(() => {
         successMsg();
         getCart();
       })
