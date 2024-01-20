@@ -54,6 +54,20 @@ export default function Cart() {
       });
   };
 
+  if (cart.length === 0 || cart === null) {
+    return (
+      <>
+        <Navbar />
+        <div className="bg-whitemy-5">
+          <h3 className="fw-bold mb-3 container">Cart Product</h3>
+          <div className="border border-1 bg-light text-dark rounded d-flex justify-content-center p-5">
+            <h3 className="fw-bold mx-auto text-dark">Data not Found</h3>
+          </div>
+        </div>
+      </>
+    );
+  }
+
   return (
     <div>
       <Navbar />
